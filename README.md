@@ -8,3 +8,10 @@ The model was able to identify objects like bus and people, and displayed boundi
 This confirms that the detection setup and environment are working correctly.  
 This completes my first task of the internship.
 
+# Internship Assignment2 
+- Performed object detection on multiple images.
+- Also performed segmentation on the same images.
+- Stored outputs in day2 folders.
+
+
+
