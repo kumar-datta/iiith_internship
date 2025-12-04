@@ -35,9 +35,7 @@ The chosen application was Milk Level Detection, where the system identifies the
 
 ✔ Dataset Preparation
 
-I collected my own 2-minute video showing different milk levels, backgrounds, and lighting conditions.
-
-To increase variety, I also took a few milk overflow clips from YouTube.
+To increase variety, I  took a few milk overflow clips from YouTube.
 
 Using Label Studio, I manually annotated around 300 images with the three classes.
 
@@ -59,7 +57,7 @@ augmentations = default YOLO augment
 
 device = 0 (GPU)
 
-✔ Performance and Metrics
+- Performance and Metrics
 
 After training, the model achieved the following results:
 
@@ -71,7 +69,7 @@ mAP50: 93.2%
 
 mAP50–95: 75.3%
 
-Class-wise performance:
+- Class-wise performance
 
 Milk_Low: 98%
 
@@ -79,13 +77,13 @@ Milk_High: 82%
 
 Milk_Overflow: 99%
 
-✔ Observations and Issues
+- Observations and Issues
 
 The model performed extremely well for Low and Overflow classes.
 
 However, it sometimes misclassified Milk_High as Milk_Low, and vice-versa.
 
-This happened because:
+- This happened because:
 
 Both classes look visually very similar
 
@@ -95,7 +93,7 @@ Fewer images were available for the “High” class
 
 Some frames were between Low and High, creating ambiguity
 
-✔ Improvements Required
+- Improvements Required
 
 To solve the confusion between Low and High:
 
@@ -109,7 +107,7 @@ Use stronger image augmentations
 
 Optionally switch to YOLOv8m for better class separation
 
-✔ Learning Experience
+- Learning Experience
 
 This assignment helped me understand:
 
